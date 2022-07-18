@@ -1,0 +1,85 @@
+<header class="header" #header>
+
+    <div class="nav-logo nav-logo-mobile">
+        <a [routerLink]="['/']" class="nav-logo__a">
+            <picture>
+                <source type="image/webp" srcset="assets/img/logo_nav.webp">
+                <source type="image/png" srcset="assets/img/logo_nav.png">
+                <img src="assets/img/lo1.png" height="70px" width="184px" class="nav-logo__img" alt="Recargas Electrónicas">
+            </picture>
+        </a>
+    </div>
+
+    <div class="nav-btn" #navAn>
+        <div class="nav-btn__content">
+            <span class="nav-btn__icon line-1"></span>
+            <span class="nav-btn__icon line-2"></span>
+            <span class="nav-btn__icon line-3"></span>
+        </div>
+    </div>
+
+    <nav class="nav container flex align-center justify-between" [ngClass]="{'navActive': navActive }" #nav>
+
+        <div class="nav-logo nav-logo-desktop">
+            <a [routerLink]="['/']" class="nav-logo__a">
+                <picture>
+                    <source type="image/webp" srcset="assets/img/logo_nav.webp">
+                    <source type="image/png" srcset="assets/img/logo_nav.png">
+                    <img src="assets/img/lo1.png" height="70px" width="184px" class="nav-logo__img" alt="Recargas Electrónicas">
+                </picture>
+            </a>
+        </div>
+
+        <div class="nav-menu">
+            <ul class="nav__ul flex justify-center aling-center">
+                <li class="nav__li">
+                    <a class="nav__a" [routerLink]="['/']">Inicio</a>
+                </li>
+
+                <li class="nav__li nav__li-submenu">
+                    <a class="nav__a" [routerLink]="">Consultar</a>
+
+                    <div class="nav-dropdown">
+                        <li class="nav-dropdown__li">
+                            <a class="nav__a nav-dropdown__a" [routerLink]="['´productos/faqs']">Productos</a>
+                        </li>
+                        <li class="nav-dropdown__li">
+                            <a class="nav__a nav-dropdown__a" [routerLink]="['´productos/blog']">Plataformas</a>
+                        </li>
+                        <!-- <li class="nav-dropdown__li">
+                            <a class="nav__a nav-dropdown__a" [routerLink]="['´productos/blog']">Recargaki</a>
+                        </li> -->
+                    </div>
+                </li>
+
+                <li class="nav__li">
+                    <a class="nav__a" [routerLink]="">Reportes</a>
+                </li>
+
+
+                <li class="nav__li nav__li-submenu">
+                    <a class="nav__a" [routerLink]="['registro']">Ayuda</a>
+
+                    <ul class="nav-dropdown">
+                        <li class="nav__li nav-dropdown__li">
+                            <a class="nav__a nav-dropdown__a" [routerLink]=" [ 'sources/contacto'] ">Contacto</a>
+                        </li>
+                        <li class="nav__li nav-dropdown__li ">
+                            <a class="nav__a nav-dropdown__a" [routerLink]="[ 'sources/faqs'] ">FAQS</a>
+                        </li>
+
+                        <li class="nav__li nav-dropdown__li ">
+                            <a class="nav__a nav-dropdown__a" [routerLink]="[ 'sources/blog'] ">Blog</a>
+                        </li>
+
+                    </ul>
+
+                </li>
+
+                <a class="nav__a" [routerLink]="[ 'registro']" #registro>Registrarme</a>
+            </ul>
+        </div>
+    </nav>
+
+
+</header>
