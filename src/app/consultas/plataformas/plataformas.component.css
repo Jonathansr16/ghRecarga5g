@@ -1,0 +1,122 @@
+/* ============ PLATAFORMAS ============  */
+
+
+/* ============ BANNER ============  */
+
+.banner-plat {
+    background-image: url('/assets/img/banner_plataformas.webp');
+}
+
+
+/* ============ SECTION DEVICES ============  */
+
+.devices {
+    margin-top: 3rem;
+}
+
+.devices__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.devices-item {
+    background-color: var(--back-card);
+    margin: 4em 0;
+    padding: 0.55em 0.75em;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+.devices-item__icon {
+    text-align: center;
+    background-color: var(--color-light-3);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.devices-item__i {
+    font-size: 2.5em;
+    color: #fff;
+}
+
+.devices-item__h3 {
+    text-align: left;
+    margin-top: .50em;
+    font-weight: var(--font-600);
+}
+
+.devices-item__p {
+    text-align: justify;
+    margin: .50em 0;
+}
+
+.devices-image {
+    margin: 0 1rem;
+}
+
+
+/* ============ SECTION MOBILE ============  */
+
+.mobile__container {
+    padding: 1rem;
+    position: relative;
+    font-family: 'Raleway', 'Poppins', sans-serif;
+}
+
+.mobile__content {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile-desc__h3 {
+    font-size: 2rem;
+    line-height: 40px;
+    font-weight: 800;
+    color: var(--color-title);
+}
+
+.mobile__li {
+    display: flex;
+    align-items: center;
+    margin: 0.85em 0;
+}
+
+.mobile__icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-primary);
+}
+
+.mobile__i {
+    font-size: 1.8rem;
+    color: #FFF;
+}
+
+.mobile__p {
+    padding: 0.75em;
+}
+
+.mobile-desc__span--pagaqui {
+    color: #6684db;
+}
+
+.mobile-desc__span--recargaki {
+    color: #3fab3f;
+}
+
+.mobile__icon--pagaqui {
+    background-color: var(--color-light-3);
+}
+
+.mobile__icon--recargaki {
+    background-color: var(--color-light-2);
+}

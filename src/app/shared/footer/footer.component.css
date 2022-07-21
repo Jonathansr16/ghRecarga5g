@@ -1,6 +1,6 @@
 .footer {
     width: 100%;
-    background-color: var(--back-card);
+    background-color: var(--back-footer);
     font-family: 'Raleway', 'Poppins', sans-serif;
 }
 
@@ -20,10 +20,9 @@
 
 .footer__h2 {
     position: relative;
-    color: var(--color-gray);
-    font-weight: var(--font-500);
     margin-bottom: 15px;
     font-size: 1.375rem;
+    font-weight: bold;
 }
 
 .footer__h2:before {
@@ -42,6 +41,8 @@
 
 .footer__li {
     padding: 10px 0;
+    display: flex;
+    align-items: center;
 }
 
 .footer-logo {
@@ -59,8 +60,19 @@
     display: flex;
 }
 
-.social {
-    margin-top: 20px;
+.footer__a {
+    font-weight: var(--font-600);
+    transition: transform .310s ease;
+    /* color: #EEEFF4; */
+    color: var(--color-a);
+}
+
+.footer__a:hover {
+    transform: translateY(-5px);
+    color: var(--color-primary);
+}
+
+.social__ul {
     display: flex;
 }
 
@@ -79,32 +91,11 @@
 
 .footer__span {
     padding: 0 6px;
+    color: var(--color-text);
 }
 
-.social__li:nth-child(1) a {
-    background-color: #3B5998;
-}
-
-.social__li:nth-child(2) a {
-    background-color: #00ACEE;
-}
-
-.social__li:nth-child(3) a {
-    background: #833ab4;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.social__li:nth-child(4) a {
-    background: #e52d27;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #b31217, #e52d27);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #b31217, #e52d27);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+.social__a {
+    background-color: rgb(43, 46, 55);
 }
 
 .social__li:hover a {
@@ -118,8 +109,26 @@
     font-weight: var(--font-500);
 }
 
+.footer__i--arrow {
+    color: var(--color-primary);
+}
+
+.social__i {
+    color: #FFF;
+}
+
 .copyright {
     border-top: 1px solid var(--color-gray);
+}
+
+.copyright__container {
+    margin-top: 1rem;
+}
+
+.copyright__left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 @media screen and (max-width: 992px) {

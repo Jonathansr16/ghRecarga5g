@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { SharedModule } from '@shared/shared.module';
 
 import { NoImagePipe } from './pipes/no-image.pipe';
-import { NoPageFoundComponent } from './components/no-page-found/no-page-found.component';
 import { HomeModule } from './home/home.module';
 
 
@@ -14,7 +13,6 @@ import { HomeModule } from './home/home.module';
   declarations: [
     AppComponent,
     NoImagePipe,
-    NoPageFoundComponent
   ],
   imports: [
     BrowserModule,

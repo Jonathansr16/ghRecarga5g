@@ -1,15 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ConsultasRoutingModule } from '@consultas/consultas-routing.module';
 import { HomeRoutingModule } from './home/home-routing.module';
-import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
- 
+  { path: 'consultas', loadChildren: () => import('@consultas/consultas.module').then(m => m.ConsultasModule)}
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes), 
-            HomeRoutingModule
+            HomeRoutingModule,
+            ConsultasRoutingModule
   ],
   exports: [RouterModule]
 })
