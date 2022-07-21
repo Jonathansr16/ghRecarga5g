@@ -10,6 +10,7 @@ import { PlatrecargakiComponent } from './platrecargaki/platrecargaki.component'
 
 //MODULES
 import { ConsultasRoutingModule } from '@consultas/consultas-routing.module';
+import { ConsultasComponent } from './consultas.component';
 @NgModule({
   declarations: [
    
@@ -17,7 +18,8 @@ import { ConsultasRoutingModule } from '@consultas/consultas-routing.module';
     PlataformasComponent,
     ProductosComponent,
     PlatpagaquiComponent,
-    PlatrecargakiComponent
+    PlatrecargakiComponent,
+    ConsultasComponent
   ],
   imports: [
     CommonModule,

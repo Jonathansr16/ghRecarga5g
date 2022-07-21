@@ -1,11 +1,11 @@
-<div class="banner-plat banner">
+<!-- <div class="banner-plat banner">
 
-</div>
+</div> -->
 
 
 <section class="devices container">
 
-    <h2 class="devices__h2 title">Vende Recargas desde donde quieras</h2>
+    <h1 class="devices__h2 title">Vende Recargas desde donde quieras</h1>
     <div class="devices__content">
 
         <div class="devices-left">
@@ -82,12 +82,12 @@
                         </div>
 
                         <div class="mobile-desc">
-                            <h3 class="mobile-desc__h3">Realiza recargas con
+                            <h2 class="mobile-desc__h3">Realiza recargas con
 
-                                <span class="mobile-desc__span--pagaqui">
+                                <span class="title-pagaqui">
                                     Pagaqui
                                 </span>
-                            </h3>
+                            </h2>
 
                             <ul class="mobile__ul">
                                 <li class="mobile__li">
@@ -120,7 +120,7 @@
                                 </li>
                             </ul>
 
-                            <a routerLink="/consultas/pagaqui" class="mobile__btn btn-2">
+                            <a routerLink="/consultas/pagaqui" class="mobile__btn btn-2 btn__pagaqui">
                                Leer más 
                                 <i class='bx bx-right-arrow-alt btn-2__i'></i> 
                             </a>
@@ -142,12 +142,12 @@
                         </div>
 
                         <div class="mobile-desc">
-                            <h3 class="mobile-desc__h3 ">
+                            <h2 class="mobile-desc__h3 ">
                                 Realiza recargas con
-                                <span class="mobile-desc__span--recargaki">
+                                <span class="title-recargaki">
                                     Recargaki/Planetaemx
                                 </span>
-                            </h3>
+                            </h2>
 
                             <ul class="mobile__ul">
                                 <li class="mobile__li">
@@ -179,7 +179,7 @@
                                     <p class="mobile__p">Consulta y descarga tu reporte de ventas</p>
                                 </li>
                             </ul>
-                            <a routerLink="/consultas/recargaki" class="mobile__btn btn-2">
+                            <a routerLink="/consultas/recargaki" class="mobile__btn btn-2 btn__recargaki">
                                 Leer más 
                                  <i class='bx bx-right-arrow-alt btn-2__i'></i> 
                              </a>
@@ -202,33 +202,71 @@
 
         <h3 class="title download-app__h3">Descarga la App para tu dispositivo movil</h3>
 
-        <p class="text">Descarga la desde la tienda oficial de tus aplicaciónes. y empieza a realizar recargas electrónicas a cualquier compañia de telefonia celular disponible en México</p>
+        <p class="text download-app__p">Descarga la desde la tienda oficial de tus aplicaciónes. y empieza a realizar recargas electrónicas a cualquier compañia de telefonia celular disponible en México</p>
 
 
-        <div class="dowload-apps">
+        <div class="dowload-apps grid grid-col-2 align-center justify-center">
 
 
-            <div class="download-app--1">
+            <div class="download-app__type">
 
                 <h5 class="download-app__h5">Pagaqui</h5>
-
-                <picture class="download-app__picture">
-                    <img src="assets/img/google-play.png" alt="" class="download-app__img">
-                </picture>
-
+                <a href="https://play.google.com/store/search?q=pagaqui&c=apps&hl=es" class="download-app__a" aria-label="Pagaqui" target="_blank" rel="noopener">
+                    <picture class="download-app__picture">
+                        <img src="assets/img/google-play.png" alt="" class="download-app__img">
+                    </picture>
+                </a>
             </div>
 
-            <div class="download-app--2">
+            <div class="download-app__type">
 
                 <h5 class="download-app__h5">Recargaki/Planetaemx</h5>
-
-                <picture class="download-app__picture">
-                    <img src="assets/img/google-play.png" alt="" class="download-app__img">
-                </picture>
-
+                <a href="https://play.google.com/store/search?q=recargaki&c=apps&hl=es" class="download-app__a" aria-label="Planetaemx" target="_blank" rel="noopener">
+                    <picture class="download-app__picture">
+                        <img src="assets/img/google-play.png" alt="" class="download-app__img">
+                    </picture>
+                </a>
             </div>
         </div>
 
     </div>
 
+</section>
+
+
+<!-- ============= SECCION ACCESO ============= -->
+<section class="acceso">
+    <div class="acceso__container container grid grid-col-2 align-center justify-center">
+
+        <div class="acceso__content">
+            <h3 class="acceso__h3">Accede a tu plataforma y empieza a realizar recargas, pago de servicios y pines electrónicos</h3>
+
+            <div class="acceso__items">
+
+                <div class="acceso__item">
+
+                    <h4 class="acceso__h4"> Accede a tu plataforma <span class="acceso__span title-pagaqui">PAGAQUI</span></h4>
+                    <a href="https://pagaqui.com.mx/Login.aspx" class="btn-2 acceso__a btn__pagaqui" aria-label="acceso a planetaemx" rel="noopener" target="_blank">
+                   Pagaqui
+                    <i class='bx bx-right-arrow-alt btn-2__i'></i>
+                </a>
+                </div>
+
+                <div class="acceso-item">
+                    <h4 class="acceso__h4"> Accede a tu plataforma <span class="acceso__span title-recargaki">PLANETAEMX</span></h4>
+                    <a href="https://www.planetaemx.com/" class="btn-2 acceso__a btn__recargaki" aria-label="acceso a planetaemx" rel="noopener" target="_blank">
+                    Planetaemx
+                    <i class='bx bx-right-arrow-alt btn-2__i'></i>
+                </a>
+                </div>
+            </div>
+
+        </div>
+        <div class="acceso__image">
+            <picture class="acceso__picture">
+                <img src="assets/img/men-acceso.png" class="acceso__img" alt="">
+            </picture>
+        </div>
+
+    </div>
 </section>

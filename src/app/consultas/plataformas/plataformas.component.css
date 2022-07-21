@@ -3,8 +3,27 @@
 
 /* ============ BANNER ============  */
 
-.banner-plat {
+
+/* .banner-plat {
     background-image: url('/assets/img/banner_plataformas.webp');
+} */
+
+.btn__pagaqui:before {
+    background-color: #6684db;
+}
+
+.btn__recargaki:before {
+    background-color: hsl(120, 60%, 37%);
+}
+
+.title-pagaqui {
+    color: #6684db;
+    font-weight: 700;
+}
+
+.title-recargaki {
+    color: #3fab3f;
+    font-weight: 700;
 }
 
 
@@ -119,4 +138,94 @@
 
 .mobile__icon--recargaki {
     background-color: var(--color-light-2);
+}
+
+
+/* ============ SECTION MOBILE ============  */
+
+.download-app {
+    margin: 4em 0;
+}
+
+.download-app__container {
+    background-color: #6684db;
+    border-radius: 10px;
+    padding: 3rem;
+    box-shadow: var(--shadow);
+}
+
+.download-app__type {
+    margin: auto;
+}
+
+.download-app__h3 {
+    color: #fff;
+    text-align: left;
+    font-size: 2rem;
+}
+
+.download-app__img {
+    width: 280px;
+}
+
+.download-app__p {
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: 40px;
+}
+
+.download-app__h5 {
+    color: #fff;
+    font-size: 1.4em;
+    text-align: center;
+}
+
+
+/* ============ SECTION  ACCESO ============  */
+
+.acceso {
+    margin: 3rem 0;
+    font-family: 'Raleway', 'Poppins', sans-serif;
+}
+
+.acceso__container {
+    background-color: var(--color-light-1);
+    border-radius: 10px;
+}
+
+.acceso__items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.acceso__item {
+    padding: 0.55rem 0.75rem;
+    text-align: center;
+}
+
+.acceso__h3 {
+    font-size: 2.5rem;
+    font-weight: var(--font-600);
+    line-height: 40px;
+    margin-bottom: 0.55rem;
+    padding: 2rem;
+}
+
+.acceso__h4 {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: var(--font-500);
+    margin-bottom: 0.55em;
+}
+
+.acceso__a {
+    width: 230px;
+    font-size: 1rem;
+    padding: 1rem;
+    box-shadow: var(--shadow);
+}
+
+.acceso__img {
+    height: 450px;
 }

@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 //COMPONENTS
+import { ConsultasComponent } from '@consultas/consultas.component';
 import { PlataformasComponent } from '@consultas/plataformas/plataformas.component';
 import { ProductosComponent } from '@consultas/productos/productos.component';
 import { PlatpagaquiComponent } from '@consultas/platpagaqui/platpagaqui.component';
@@ -10,11 +11,15 @@ import { NoPageFoundComponent } from '@components/no-page-found/no-page-found.co
 
 const routes: Routes = [
 
-  { path: 'consultas/plataformas', component: PlataformasComponent },
-  { path: 'consultas/productos', component: ProductosComponent },
-  { path: 'consultas/pagaqui', component: PlatpagaquiComponent },
-  { path: 'consultas/recargaki', component: PlatrecargakiComponent },
+  { path: '', component: ConsultasComponent, children: [
+    { path: 'consultas/plataformas', component: PlataformasComponent },
+    { path: 'consultas/productos', component: ProductosComponent },
+    { path: 'consultas/pagaqui', component: PlatpagaquiComponent },
+    { path: 'consultas/recargaki', component: PlatrecargakiComponent },
+  ]},
   { path: '**', component: NoPageFoundComponent}
+
+  
 
 ];
 
