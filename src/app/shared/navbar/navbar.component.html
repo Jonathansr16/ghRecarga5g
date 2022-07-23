@@ -1,7 +1,7 @@
 <header class="header" #header>
 
     <div class="nav-logo nav-logo-mobile">
-        <a [routerLink]="['/']" class="nav-logo__a">
+        <a [routerLink]="['/portal']" class="nav-logo__a">
             <picture>
                 <source type="image/webp" srcset="assets/img/logo_nav.webp">
                 <source type="image/png" srcset="assets/img/logo_nav.png">
@@ -21,7 +21,7 @@
     <nav class="nav container flex align-center justify-between" [ngClass]="{'navActive': navActive }" #nav>
 
         <div class="nav-logo nav-logo-desktop">
-            <a [routerLink]="['/']" class="nav-logo__a">
+            <a [routerLink]="['/portal']" class="nav-logo__a">
                 <picture>
                     <source type="image/webp" srcset="assets/img/logo_nav.webp">
                     <source type="image/png" srcset="assets/img/logo_nav.png">
@@ -33,7 +33,7 @@
         <div class="nav-menu">
             <ul class="nav__ul flex justify-center aling-center">
                 <li class="nav__li">
-                    <a class="nav__a" [routerLink]="['/']">Inicio</a>
+                    <a class="nav__a" [routerLink]="['/portal']">Inicio</a>
                 </li>
 
                 <li class="nav__li nav__li-submenu">
@@ -79,7 +79,7 @@
 
                 </li>
 
-                <a class="nav__a" [routerLink]="[ 'registro']" #registro>Registrarme</a>
+                <a class="nav__a" [routerLink]="[ '/portal/registro']" #registro>Registrarme</a>
             </ul>
         </div>
     </nav>

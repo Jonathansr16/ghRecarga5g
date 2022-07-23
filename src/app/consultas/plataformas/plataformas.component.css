@@ -1,21 +1,3 @@
-/* ============ PLATAFORMAS ============  */
-
-
-/* ============ BANNER ============  */
-
-
-/* .banner-plat {
-    background-image: url('/assets/img/banner_plataformas.webp');
-} */
-
-.btn__pagaqui:before {
-    background-color: #6684db;
-}
-
-.btn__recargaki:before {
-    background-color: hsl(120, 60%, 37%);
-}
-
 .title-pagaqui {
     color: #6684db;
     font-weight: 700;
@@ -45,20 +27,54 @@
     padding: 0.55em 0.75em;
     border-radius: 10px;
     box-shadow: var(--shadow);
+    transition: transform 400ms ease;
+}
+
+.devices-item:hover {
+    transform: scale(1.1);
 }
 
 .devices-item__icon {
     text-align: center;
-    background-color: var(--color-light-3);
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
     margin: auto;
 }
 
 .devices-item__i {
-    font-size: 2.5em;
-    color: #fff;
+    display: inline-block;
+    font-size: 45px;
+    color: var(--color-light-3);
+    background-color: #FFF;
+    width: 75px;
+    height: 75px;
+    line-height: 75px;
+    box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 15%);
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.devices-item__i:after {
+    position: absolute;
+    content: "";
+    z-index: -1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: var(--color-light-3);
+    border-radius: 50%;
+    transform: scale(0);
+    transition: .5s;
+}
+
+.devices-item:hover .devices-item__i {
+    color: var(--color-primary);
+}
+
+.devices-item:hover .devices-item__i:after {
+    transform: scale(1);
 }
 
 .devices-item__h3 {
@@ -77,35 +93,35 @@
 }
 
 
-/* ============ SECTION MOBILE ============  */
+/* ============ SECTION DESKTOP ============  */
 
-.mobile__container {
+.desktop__container {
     padding: 1rem;
     position: relative;
     font-family: 'Raleway', 'Poppins', sans-serif;
 }
 
-.mobile__content {
+.desktop__content {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     align-items: center;
     justify-content: center;
 }
 
-.mobile-desc__h3 {
+.desktop-desc__h3 {
     font-size: 2rem;
     line-height: 40px;
     font-weight: 800;
     color: var(--color-title);
 }
 
-.mobile__li {
+.desktop__li {
     display: flex;
     align-items: center;
     margin: 0.85em 0;
 }
 
-.mobile__icon {
+.desktop__icon {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -115,28 +131,28 @@
     background-color: var(--color-primary);
 }
 
-.mobile__i {
+.desktop__i {
     font-size: 1.8rem;
     color: #FFF;
 }
 
-.mobile__p {
+.desktop__p {
     padding: 0.75em;
 }
 
-.mobile-desc__span--pagaqui {
+.desktop-desc__span--pagaqui {
     color: #6684db;
 }
 
-.mobile-desc__span--recargaki {
+.desktop-desc__span--recargaki {
     color: #3fab3f;
 }
 
-.mobile__icon--pagaqui {
+.desktop__icon--pagaqui {
     background-color: var(--color-light-3);
 }
 
-.mobile__icon--recargaki {
+.desktop__icon--recargaki {
     background-color: var(--color-light-2);
 }
 
@@ -219,13 +235,25 @@
     margin-bottom: 0.55em;
 }
 
-.acceso__a {
-    width: 230px;
-    font-size: 1rem;
-    padding: 1rem;
-    box-shadow: var(--shadow);
-}
-
 .acceso__img {
     height: 450px;
+}
+
+@media screen and (max-width: 992px) {
+    /* ============ SECTION DEVICES ============  */
+    .devices__content {
+        grid-template-columns: 1fr;
+    }
+    /* ============ SECTION DESKTOP ============  */
+    .desktop__content {
+        grid-template-columns: 1fr;
+    }
+    /* ============ SECTION DOWNLOAD APPS ============  */
+    .download-apps {
+        grid-template-columns: 1fr;
+    }
+    /* ============ SECTION DESKTOP ============  */
+    .acceso__container {
+        grid-template-columns: 1fr;
+    }
 }

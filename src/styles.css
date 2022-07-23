@@ -408,7 +408,7 @@
         color: #FFF;
         vertical-align: middle;
         display: inline-block;
-        background-color: hsla(223, 80%, 59%, 0.8);
+        background-color: var(--color-primary);
         transform: perspective(1px) translateZ(0);
     }
     
@@ -419,37 +419,149 @@
         animation-iteration-count: 1;
     }
     
-    .btn-2 {
-        width: 180px;
-        height: 40px;
+    .btn__pagaqui,
+    .btn__recargaki,
+    .btn__default {
+        width: 230px;
+        font-size: 1.2rem;
+        transition: .90s ease;
+        font-weight: var(--font-600);
         position: relative;
         display: flex;
         align-items: center;
         justify-content: center;
         margin: auto;
-        font-size: 1.3rem;
-        font-weight: var(--font-500);
     }
     
-    .btn-2::before {
+    .btn__pagaqui:hover,
+    .btn__recargaki:hover,
+    .btn__default:hover {
+        background-position: 0;
+    }
+    
+    .btn__pagaqui:before,
+    .btn__recargaki:before,
+    .btn__default:before {
         content: "";
         position: absolute;
-        bottom: 0;
-        left: 27px;
-        width: 70%;
+        bottom: -7px;
+        left: 50%;
+        width: 50%;
+        transform: translateX(-50%);
         height: 3.5px;
+    }
+    
+    .btn__pagaqui {
+        background: linear-gradient( to right, hsl(241, 59%, 63%), hsl(225, 62%, 63%), 50%, var(--color-text) 50%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 200% 100%;
+        background-position: 100%;
+    }
+    
+    .btn__pagaqui:before {
+        background-color: hsl(225, 62%, 63%);
+    }
+    
+    .btn__recargaki {
+        background: linear-gradient( to right, hsl(138, 50%, 60%), hsl(135, 59%, 43%), 50%, var(--color-text) 50%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 200% 100%;
+        background-position: 100%;
+    }
+    
+    .btn__recargaki:before {
+        background-color: hsl(120, 46%, 46%);
+    }
+    
+    .btn__default {
+        background: linear-gradient( to right, hsl(0, 72%, 60%), var(--color-primary), 50%, var(--color-text) 50%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 200% 100%;
+        background-position: 100%;
+    }
+    
+    .btn__default::before {
         background-color: var(--color-primary);
     }
+    /* ============= ICON ARROW ANIMATION ============= */
     
-    .btn-2__i {
+    .icon__i--arrow {
         font-size: 1.8rem;
         font-weight: var(--font--500);
-        transition: transform 0.3s ease;
+        transition: transform 0.90s ease;
     }
     
-    .btn-2:hover .btn-2__i {
+    .btn__pagaqui:hover .icon__i--arrow,
+    .btn__recargaki:hover .icon__i--arrow,
+    .btn__default:hover .icon__i--arrow {
         transform: translateX(10px);
+        background-position: 0;
     }
+    
+    .icon__i--pagaqui {
+        background: linear-gradient( to right, hsl(241, 59%, 63%), hsl(225, 62%, 63%), 50%, var(--color-text) 50%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 200% 100%;
+        background-position: 100%;
+    }
+    
+    .icon__i--recargaki {
+        background: linear-gradient( to right, hsl(138, 50%, 60%), hsl(135, 59%, 43%), 50%, var(--color-text) 50%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 200% 100%;
+        background-position: 100%;
+    }
+    
+    .icon__i--default {
+        background: linear-gradient( to right, hsl(0, 72%, 60%), var(--color-primary), 50%, var(--color-text) 50%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 200% 100%;
+        background-position: 100%;
+    }
+    /* ============= SWIPERJS ============= */
+    
+    .swiper {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    
+    .swiper-slide {
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        object-fit: cover;
+        height: auto;
+        margin: 0 auto;
+    }
+    /* ============= ANIMATION BACKGROUND TEXT ============= */
     /* Responsive Typography */
     
     @media screen and (max-width: 992px) {

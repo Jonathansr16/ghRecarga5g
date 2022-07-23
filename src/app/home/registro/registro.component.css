@@ -1,0 +1,8 @@
+.registro__banner {
+    background-image: url('/assets/img/banner__recarga5g.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 550px;
+}

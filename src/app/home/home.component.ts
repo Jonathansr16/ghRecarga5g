@@ -4,10 +4,13 @@ import { Autoplay, Swiper} from 'swiper';
 import SwiperCore, { EffectCoverflow, Pagination } from "swiper";
 SwiperCore.use([Autoplay, EffectCoverflow, Pagination]);
 
+import { DOCUMENT } from '@angular/common';
+import { SlideDataService, } from '@services/slide-data.service';
 // @ts-ignore
 import { counterUp } from 'counterup2';
-import { DOCUMENT } from '@angular/common';
-import { SlideDataService, dataServices } from '@services/slide-data.service';
+
+
+
 
 @Component({
   selector: 'app-home',

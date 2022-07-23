@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home.component';
+import { RegistroComponent } from './registro/registro.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent }
-  
+  { path: 'portal', component: HomeComponent },
+  { path: 'portal/registro', component: RegistroComponent }
 ];
 
 @NgModule({

@@ -18,7 +18,7 @@ export class PlataformasComponent implements OnInit {
 
   ngOnInit(): void {
 
-    new Swiper('.mobile-swiper', {
+    new Swiper('.desktop-swiper', {
       grabCursor: true,
       loop: true,
       
@@ -27,7 +27,7 @@ export class PlataformasComponent implements OnInit {
        
       },
       pagination: {
-        el: '.mobile-pagination',
+        el: '.desktop-pagination',
         dynamicBullets: true
       },
     });

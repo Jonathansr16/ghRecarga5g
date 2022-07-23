@@ -19,6 +19,7 @@
     "@angular/platform-browser-dynamic": "~13.3.0",
     "@angular/router": "~13.3.0",
     "counterup2": "^2.0.2",
+    "imagekitio-angular": "^1.0.2",
     "ngx-wow": "^2.0.1",
     "rxjs": "~7.5.0",
     "swiper": "^8.3.1",

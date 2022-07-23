@@ -4,12 +4,14 @@ import { ProductosComponent } from './productos.component';
 import { PlataformasComponent } from './plataformas/plataformas.component';
 import { PagaquiComponent } from './plataformas/pagaqui/pagaqui.component';
 import { RecargakiComponent } from './plataformas/recargaki/recargaki.component';
+import { ServiciosComponent } from './servicios/servicios.component';
 @NgModule({
   declarations: [
     ProductosComponent,
     PlataformasComponent,
     PagaquiComponent,
-    RecargakiComponent
+    RecargakiComponent,
+    ServiciosComponent
   ],
   imports: [
     CommonModule,

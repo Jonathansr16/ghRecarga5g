@@ -11,19 +11,26 @@ import { PlatrecargakiComponent } from './platrecargaki/platrecargaki.component'
 //MODULES
 import { ConsultasRoutingModule } from '@consultas/consultas-routing.module';
 import { ConsultasComponent } from './consultas.component';
+
+import { DirectivesModule } from '@directives/directives.module';
+
 @NgModule({
   declarations: [
    
-  
     PlataformasComponent,
     ProductosComponent,
     PlatpagaquiComponent,
     PlatrecargakiComponent,
-    ConsultasComponent
+    ConsultasComponent,
   ],
   imports: [
     CommonModule,
-    ConsultasRoutingModule
+    ConsultasRoutingModule,
+    DirectivesModule
+     
+  ], providers: [
+ 
   ]
+ 
 })
 export class ConsultasModule { }

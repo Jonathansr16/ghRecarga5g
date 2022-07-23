@@ -4,11 +4,13 @@
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
+      "@home/*":   ["src/app/home/*"],
       "@shared/*":   ["src/app/shared/*"],
       "@services/*": ["src/app/services/*"],
       "@productos/*":["src/app/productos/*"],
       "@components/*": ["src/app/components/*"],
-      "@consultas/*": ["src/app/consultas/*"]
+      "@consultas/*": ["src/app/consultas/*"],
+      "@directives/*": ["src/app/directives/*"],
     },
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,

@@ -4,22 +4,23 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 //MODULES
 import { SharedModule } from '@shared/shared.module';
-
-import { NoImagePipe } from './pipes/no-image.pipe';
 import { HomeModule } from './home/home.module';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    NoImagePipe,
+    
   ],
   imports: [
     BrowserModule,
+    
     AppRoutingModule,
     SharedModule,
-    HomeModule
+    HomeModule,
+    
   ],
+ 
   providers: [],
   bootstrap: [AppComponent]
 })

@@ -1,3 +1,5 @@
 .banner-plat {
     background-image: url('/assets/img/banner_plataformas.webp');
+    background-position: center;
+    background-repeat: no-repeat;
 }
